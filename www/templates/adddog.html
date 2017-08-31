@@ -1,0 +1,106 @@
+<ion-view style="" class=" " id="page8" title="Add dog">
+    <ion-content class="has-header" padding="true">
+<h2 style="color: #3A154B; size:17px " >
+Please fill in form below to add a dog</br>
+</h2>
+Please note (<font color="red">*</font>) fields are required
+
+
+        <label class="item item-input ic-selected" style="color: #AFA8B2">
+          Name *
+         <input style="color: #000; margin-left:25px" ng-model="newDog.name" type="text" required>
+        </label>
+
+        <label class="item item-input ic-selected" style="color: #AFA8B2">
+          Breed *
+            <input style="color: #000; margin-left:25px" ng-model="newDog.breed" type="text" required>
+          </label>
+
+        <label class="item item-input ic-selected" style="color: #AFA8B2">
+          Size
+            <select class="input-label item-select item-stable" style="color: #000; border:#AFA8B2; margin-left:25px" ng-model="newDog.size" >
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+              </select>
+          </label>
+
+  <label class="item item-input ic-selected" style="color: #AFA8B2">
+          Gender *
+              <select class="input-label item-select item-stable" style="color: #000; border:#AFA8B2; margin-left:15px" ng-model="newDog.gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+</label>
+
+        <label class="item item-input ic-selected" style="color: #AFA8B2">
+          Age *
+            <select class="input-label item-select item-stable" style="color: #000; border:#AFA8B2; margin-left:15px" ng-model="newDog.age" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>                           
+              </select>              
+          </label>
+
+        <label class="item item-input ic-selected" style="color: #AFA8B2">
+          Pedigree
+            <select class="input-label item-select item-stable" style="color: #000; border:#AFA8B2; margin-left:15px" ng-model="newDog.pedigree">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+          </label>
+
+        <label class="item item-input ic-selected" style="color: #AFA8B2">
+          Description
+            <input style="color: #000; margin-left:25px" ng-model="newDog.description" type="text">
+          </label>
+
+        <label class="item item-input ic-selected" style="color: #AFA8B2">
+          I'm looking for
+            <input style="color: #000; margin-left:25px" ng-model="newDog.searching" type="text">
+          </label>
+
+        <label class="item item-input ic-selected" style="color: #AFA8B2">
+          Progeny *
+            <select class="input-label item-select item-stable" style="color: #000; border:#AFA8B2; margin-left:15px" ng-model="newDog.progeny" required>
+                <option value="0 - 100">0 - 100</option>
+                <option value="25 - 75">25 - 75</option>
+                <option value="50 - 50">50 - 50</option>
+                <option value="75 - 25">75 - 25</option> 
+                <option value="100 - 0">100 - 0</option>
+                <option value="other">other</option>                   
+            </select>              
+          </label>
+
+        <label class="item item-input ic-selected" style="color: #AFA8B2">
+          Owner's name
+            <input style="color: #000; margin-left:25px" ng-model="newDog.ownname" type="text">
+          </label>
+
+         <label class="item item-input ic-selected" style="color: #AFA8B2">
+          Telephone *
+            <input style="color: #000; margin-left:25px" ng-model="newDog.telephone" type="text" required>
+          </label>
+
+        <label class="item item-input ic-selected" style="color: #AFA8B2">
+          Price
+            <input style="color: #000; margin-left:25px" ng-model="newDog.price" type="text">
+          </label>
+
+        <button ng-click="addDog()" 
+        class=" button button-assertive  button-block  icon-left ion-ios-paw-outline " 
+        style="border-radius:0px 0px 0px 0px;" id="signup-button3">
+        Add dog
+        </button>
+     
+
+
+    </ion-content>
+</ion-view>

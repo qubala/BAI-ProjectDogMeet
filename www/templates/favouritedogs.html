@@ -1,0 +1,43 @@
+<ion-view style="" class=" " id="page9" title="Favourite dogs">
+    <ion-content class="has-header" padding="true">
+
+      <div>
+        <p>Favourite dogs: <b>  {{get_qty()}} </b>  
+          <hr>
+        </p>
+      </div>
+
+      <div ng-repeat="item in favo"   >
+        <div class="list card" >
+          <div class="item item-body" >
+
+            <img ng-src="{{'img/fk/'+ item.dog_image +'.jpg'}}" width="100%" height="auto" style="box-shadow: none;">
+            <form class="list"></form>
+            <div>
+              <p>
+                Name: <strong>{{item.dog_name}}</strong> <br/>
+                Breed: <strong>{{item.dog_breed}}</strong> <br/>
+                Size: <strong>{{item.dog_size}}</strong> <br/>
+                Gender: <strong>{{item.dog_gender}}</strong> <br/>
+                Age: <strong>{{item.dog_age}}</strong> <br/>
+                Pedigree: <strong>{{item.dog_pedigree}}</strong> <br/>
+                Description: <strong>{{item.dog_description}}</strong> <br/>
+                Looking for: <strong>{{item.dog_looking_for}}</strong> <br/>
+                Progeny: <strong>{{item.dog_progeny}}</strong> <br/>
+                Owner's name: <strong>{{item.dog_owners_name}}</strong> <br/>
+                Phone: <strong>{{item.dog_phone}}</strong> <br/>
+                Price: <strong>  {{ item.dog_price  }}</strong>
+              </p>
+            </div>
+            <div class="button-bar" style="box-shadow: none;">
+              <button ng-click="removeFromFavourites(item.$id)" class="button button-assertive button-block button-small icon ion-android-delete" ></button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </ion-content>
+</ion-view>
