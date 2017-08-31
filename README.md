@@ -7,10 +7,10 @@ DogMeet pozwala na wyszukanie przez użytkownika (właściciela psa) odpowiednie
 Celem aplikacji jest ułatwienie właścicielowi psa znalezienie właściciela drugiego psa w celu uzyskania konkretnej rasy (skrzyżowania ras).
 
 # Link do wiki
-
+https://github.com/qubala/BAI-ProjectDogMeet/wiki
 <br>
 # Link do aplikacji
-
+https://build.phonegap.com/apps/2781364/share
 <br>
 # Autorzy
 Jakub Piekarczyk<br>
